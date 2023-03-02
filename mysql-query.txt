@@ -1,0 +1,11 @@
+create database company;
+use company;
+
+create table staff(id int PRIMARY KEY AUTO_INCREMENT, fisrt_name varchar(200) NOT NULL,
+last_name varchar(200) NOT NULL, branch varchar(200) NOT NULL, employment_status varchar(80) NOT NULL);
+
+insert into staff(first_name, last_name, branch, employment_status) values('James', 'Doe', 'California', 'Active');
+
+create user elon identified with mysql_native_password by 'musk';
+
+grant all on company.* to elon;
