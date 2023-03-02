@@ -76,7 +76,7 @@ public class DBConnector {
             cn.close();
             return true;
         } catch(SQLException se) {
-            System.err.println("ERROR: Cannot write into the database");
+            System.err.println("ERROR: Cannot update into the database");
             return false;
         }
     }
@@ -92,7 +92,7 @@ public class DBConnector {
             cn.close();
             return true;
         } catch(SQLException se) {
-            System.err.println("ERRORs: Cannot write into the database");
+            System.err.println("ERRORs: Cannot delete from the database");
             return false;
         }
     }
